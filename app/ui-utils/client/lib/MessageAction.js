@@ -238,8 +238,9 @@ Meteor.startup(async function() {
 		classes: 'clipboard',
 		context: ['message', 'message-mobile', 'threads'],
 		action() {
-			const { msg: { msg } } = messageArgs(this);
-			navigator.clipboard.writeText(msg);
+			const { msg } = messageArgs(this);
+			const msgToCopy = msg.attachments?.length ? msg.attachments[0].description : msg.msg;
+			navigator.clipboard.writeText(msgToCopy);
 			toastr.success(TAPi18n.__('Copied'));
 		},
 		condition({ subscription }) {
