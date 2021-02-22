@@ -22,13 +22,15 @@ const hover = css`
 	&:hover,
 	&:focus {
 		.rcx-attachment__details {
-			background: ${ colors.n200 } !important;
+			background: var(--content-background-color, ${ colors.b200 }) !important;
 			border-color: ${ colors.n300 } !important;
 			border-inline-start-color: ${ colors.n600 } !important;
 		}
 	}
+	.rcx-attachment__details {
+		background-color: var(--content-background-color, ${ colors.b200 }) !important;
+	}
 `;
-
 export const QuoteAttachment: FC<QuoteAttachmentProps> = ({ author_icon: url, author_name: name, author_link: authorLink, message_link: messageLink, ts, text, attachments }) => {
 	const format = useTimeAgo();
 	return <>
