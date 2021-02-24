@@ -6,12 +6,13 @@ about: Create a report to help us improve
 
 <!-- 
 
-Please see our guide for opening issues: https://rocket.chat/docs/contributing/reporting-issues
+Please see our guide for opening issues: https://docs.rocket.chat/contributors/contributing/reporting-issues
 
-If you have questions or are looking for help/support please see: https://rocket.chat/docs/getting-support
+If you have questions or are looking for help/support please see: https://docs.rocket.chat/getting-support
 
 If you are experiencing a bug please search our issues to be sure it is not already present: https://github.com/RocketChat/Rocket.Chat/issues
 
+Please keep all sections in issue ticket, otherwise issue will be automatically closed.
 -->
 
 ### Description:
@@ -54,4 +55,4 @@ If you are experiencing a bug please search our issues to be sure it is not alre
 ### Relevant logs:
 
 <!-- Logs from both SERVER and BROWSER -->
-<!-- For more information about collecting logs please see: https://rocket.chat/docs/contributing/reporting-issues#gathering-logs -->
+<!-- For more information about collecting logs please see: https://docs.rocket.chat/contributors/contributing/reporting-issues#gathering-logs -->
